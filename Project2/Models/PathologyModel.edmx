@@ -33,6 +33,171 @@
           <Property Name="DOC_SHARE" Type="int" />
           <Property Name="DEP_ID" Type="int" />
         </EntityType>
+        <EntityType Name="TBL_ORGINATION">
+          <Key>
+            <PropertyRef Name="ORG_ID" />
+          </Key>
+          <Property Name="ORG_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ORGNAME" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_AVBRIVATION" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_ADDRESS" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_PHONE" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_LOCATION" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_LOGO" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_VISSION" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_EMAIL" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_A" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_B" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_C" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_CODE" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_BARCH" Type="varchar" MaxLength="500" />
+          <Property Name="ORG_HEAD" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="TBL_PAY_MAST">
+          <Key>
+            <PropertyRef Name="EMP_CODE" />
+          </Key>
+          <Property Name="EMP_CODE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EMP_NAME" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMP_FNAME" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMP_MNAME" Type="nvarchar" MaxLength="500" />
+          <Property Name="SEX_MF" Type="nvarchar" MaxLength="10" />
+          <Property Name="EMP_CELL" Type="int" />
+          <Property Name="BIRTH_DATE" Type="date" />
+          <Property Name="ID_CARD" Type="int" />
+          <Property Name="EMP_PHONE" Type="int" />
+          <Property Name="EMP_EMAIL" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMP_POSADD" Type="nvarchar" MaxLength="1000" />
+          <Property Name="EMP_RELIGION" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMP_SECT" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMP_CAST" Type="nvarchar" MaxLength="500" />
+          <Property Name="ID_EXP" Type="date" />
+          <Property Name="EMP_DESG" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMP_PIC" Type="int" />
+          <Property Name="DEP_CODE" Type="int" />
+          <Property Name="JOIN_DATE" Type="date" />
+          <Property Name="GROSS_SAL" Type="int" />
+          <Property Name="INCOME_TAX" Type="int" />
+          <Property Name="EMP_TAXNO" Type="int" />
+          <Property Name="EMP_ACCNO" Type="nvarchar" MaxLength="50" />
+          <Property Name="REC_DATE" Type="date" />
+          <Property Name="TERMINAT" Type="nvarchar" MaxLength="500" />
+          <Property Name="NET_SLRY" Type="int" />
+          <Property Name="INC_PAY" Type="int" />
+          <Property Name="CITY_CODE" Type="int" />
+          <Property Name="GROUP_CODE" Type="int" />
+          <Property Name="RSG_DATE" Type="date" />
+          <Property Name="PAY_TYPE" Type="nvarchar" MaxLength="200" />
+          <Property Name="STATION" Type="nvarchar" MaxLength="500" />
+          <Property Name="EOBI" Type="int" />
+          <Property Name="CMP_CODE" Type="int" />
+          <Property Name="ETP_CODE" Type="int" />
+          <Property Name="AUTOTAX" Type="nvarchar" MaxLength="500" />
+          <Property Name="B_CODE" Type="int" />
+          <Property Name="APPYN" Type="nvarchar" MaxLength="50" />
+          <Property Name="SALCODE" Type="int" />
+          <Property Name="SOCIALYN" Type="nvarchar" MaxLength="50" />
+          <Property Name="EOBIYN" Type="nvarchar" MaxLength="50" />
+          <Property Name="USRID" Type="int" />
+          <Property Name="USTTY" Type="nvarchar" MaxLength="500" />
+          <Property Name="SYS_DATE" Type="date" />
+          <Property Name="D_CODE" Type="int" />
+          <Property Name="EMPADD" Type="nvarchar" MaxLength="1500" />
+          <Property Name="MESSDED" Type="int" />
+          <Property Name="OVERGB" Type="nvarchar" MaxLength="50" />
+          <Property Name="SHIFT_DATE" Type="date" />
+          <Property Name="SHTIME_I" Type="date" />
+          <Property Name="SHTIME_O" Type="date" />
+          <Property Name="WEEK_OFF" Type="nvarchar" MaxLength="50" />
+          <Property Name="AUTOEXP" Type="nvarchar" MaxLength="50" />
+          <Property Name="CONYN" Type="nvarchar" MaxLength="50" />
+          <Property Name="SOCIALNO" Type="int" />
+          <Property Name="CON_DATE" Type="date" />
+          <Property Name="BELONG" Type="nvarchar" MaxLength="50" />
+          <Property Name="EOBINO" Type="int" />
+          <Property Name="FACTYN" Type="nvarchar" MaxLength="50" />
+          <Property Name="ALI_DATE" Type="date" />
+          <Property Name="EMP_REF" Type="nvarchar" MaxLength="500" />
+          <Property Name="CARDNO" Type="int" />
+          <Property Name="HEALTH" Type="int" />
+          <Property Name="FAX_NO" Type="int" />
+          <Property Name="EMNATI" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMDDIS" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMDPRO" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMPTEH" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMPDIS" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMPPRO" Type="nvarchar" MaxLength="500" />
+          <Property Name="PREADD" Type="nvarchar" MaxLength="2000" />
+          <Property Name="PRETEH" Type="nvarchar" MaxLength="500" />
+          <Property Name="PREDIS" Type="nvarchar" MaxLength="500" />
+          <Property Name="PREPRO" Type="nvarchar" MaxLength="500" />
+          <Property Name="FACTD" Type="nvarchar" MaxLength="500" />
+          <Property Name="POSDIS" Type="nvarchar" MaxLength="500" />
+          <Property Name="POSPRO" Type="nvarchar" MaxLength="500" />
+          <Property Name="EMMARI" Type="nvarchar" MaxLength="500" />
+          <Property Name="RSGTYP" Type="nvarchar" MaxLength="500" />
+          <Property Name="BANK_ACC" Type="nvarchar" MaxLength="200" />
+          <Property Name="E1" Type="nvarchar" MaxLength="1500" />
+          <Property Name="E2" Type="nvarchar" MaxLength="1500" />
+          <Property Name="E3" Type="nvarchar" MaxLength="1500" />
+          <Property Name="EX" Type="nvarchar" MaxLength="1500" />
+          <Property Name="OLDCOD" Type="int" />
+          <Property Name="MACCOD" Type="nvarchar" MaxLength="50" />
+          <Property Name="TCODE" Type="int" />
+          <Property Name="NCODE" Type="int" />
+          <Property Name="PMDREG" Type="nvarchar" MaxLength="500" />
+          <Property Name="PMDEXP" Type="date" />
+          <Property Name="FACREG" Type="nvarchar" MaxLength="500" />
+          <Property Name="FACEXP" Type="date" />
+          <Property Name="SHTYPE" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMPTIT" Type="nvarchar" MaxLength="500" />
+          <Property Name="REBATE" Type="int" />
+          <Property Name="ATT_YN" Type="nvarchar" MaxLength="50" />
+          <Property Name="PFNDYN" Type="nvarchar" MaxLength="50" />
+          <Property Name="FCTYPE" Type="nvarchar" MaxLength="50" />
+          <Property Name="INCHARGE" Type="nvarchar" MaxLength="500" />
+          <Property Name="PNCREG" Type="nvarchar" MaxLength="500" />
+          <Property Name="PNCEXP" Type="date" />
+          <Property Name="XADATE" Type="date" />
+          <Property Name="XCDATE" Type="date" />
+          <Property Name="XRDATE" Type="date" />
+          <Property Name="PBTIME" Type="time" Precision="7" />
+          <Property Name="PBINCR" Type="int" />
+          <Property Name="JOINSAL" Type="int" />
+          <Property Name="RSGDAYS" Type="int" />
+          <Property Name="CVCODE" Type="int" />
+          <Property Name="EMPARE" Type="nvarchar" MaxLength="500" />
+          <Property Name="PKHORS" Type="int" />
+          <Property Name="SECURTY" Type="nvarchar" MaxLength="500" />
+          <Property Name="E_DI" Type="nvarchar" MaxLength="1000" />
+          <Property Name="C_NAME" Type="nvarchar" MaxLength="500" />
+          <Property Name="D_NAME" Type="nvarchar" MaxLength="500" />
+          <Property Name="RWAL_FOUN" Type="nvarchar" MaxLength="1000" />
+          <Property Name="S_CARD" Type="int" />
+          <Property Name="DOC" Type="int" />
+          <Property Name="APPL" Type="int" />
+          <Property Name="BIOT" Type="int" />
+          <Property Name="BANK" Type="int" />
+          <Property Name="FEE" Type="int" />
+          <Property Name="RSG_CODE" Type="int" />
+          <Property Name="DOCYN" Type="int" />
+          <Property Name="MED_ALLIED" Type="nvarchar" MaxLength="3000" />
+          <Property Name="PRIVATE_PRACTICES" Type="int" />
+          <Property Name="SIGN" Type="nvarchar" MaxLength="1000" />
+          <Property Name="HOSTELYN" Type="nvarchar" MaxLength="500" />
+          <Property Name="HOSTEL_CHARGES" Type="int" />
+          <Property Name="DAY_CAREYN" Type="nvarchar" MaxLength="500" />
+          <Property Name="DAYCARE_CHARGES" Type="int" />
+          <Property Name="DRIVE_LINCES" Type="nvarchar" MaxLength="500" />
+          <Property Name="ENT_SYSDATE" Type="date" />
+          <Property Name="EOBI_MON" Type="nvarchar" MaxLength="500" />
+          <Property Name="EOBI_YEAR" Type="nvarchar" MaxLength="50" />
+          <Property Name="EOBI_R_DATE" Type="date" />
+          <Property Name="DRYN" Type="int" />
+          <Property Name="SOCIAL_AMT" Type="int" />
+          <Property Name="EMP_TYPE" Type="int" />
+          <Property Name="EOBI_STATUS" Type="int" />
+        </EntityType>
         <EntityType Name="TBL_R_CAT">
           <Key>
             <PropertyRef Name="CAT_ID" />
@@ -173,6 +338,7 @@
           <Property Name="USERS" Type="nvarchar" MaxLength="500" />
           <Property Name="MAG_ACT" Type="int" />
           <Property Name="R_ACTIVE" Type="int" />
+          <Property Name="ORG" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'techohas.dbo.View_Visit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -335,9 +501,23 @@ warning 6002: The table/view 'techohas.dbo.View_Visit' does not have a primary k
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_TBL_USER_D_TBL_ORGINATION">
+          <End Role="TBL_ORGINATION" Type="Self.TBL_ORGINATION" Multiplicity="0..1" />
+          <End Role="TBL_USER_D" Type="Self.TBL_USER_D" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBL_ORGINATION">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="TBL_USER_D">
+              <PropertyRef Name="ORG" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="PathologyModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_CONSULTANT" EntityType="Self.TBL_CONSULTANT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_ORGINATION" EntityType="Self.TBL_ORGINATION" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_PAY_MAST" EntityType="Self.TBL_PAY_MAST" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_R_CAT" EntityType="Self.TBL_R_CAT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_R_DEPT" EntityType="Self.TBL_R_DEPT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBL_R_PATIENT" EntityType="Self.TBL_R_PATIENT" Schema="dbo" store:Type="Tables" />
@@ -458,6 +638,10 @@ warning 6002: The table/view 'techohas.dbo.View_Visit' does not have a primary k
           <AssociationSet Name="FK_TBL_R_TEST_TBL_USER_D" Association="Self.FK_TBL_R_TEST_TBL_USER_D">
             <End Role="TBL_USER_D" EntitySet="TBL_USER_D" />
             <End Role="TBL_R_TEST" EntitySet="TBL_R_TEST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBL_USER_D_TBL_ORGINATION" Association="Self.FK_TBL_USER_D_TBL_ORGINATION">
+            <End Role="TBL_ORGINATION" EntitySet="TBL_ORGINATION" />
+            <End Role="TBL_USER_D" EntitySet="TBL_USER_D" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -642,6 +826,8 @@ warning 6002: The table/view 'techohas.dbo.View_Visit' does not have a primary k
           <Property Name="MAG_ACT" Type="Int32" />
           <Property Name="R_ACTIVE" Type="Int32" />
           <NavigationProperty Name="TBL_R_TEST" Relationship="Self.FK_TBL_R_TEST_TBL_USER_D" FromRole="TBL_USER_D" ToRole="TBL_R_TEST" />
+          <Property Name="ORG" Type="Int32" />
+          <NavigationProperty Name="TBL_ORGINATION" Relationship="PathologyModel.FK_TBL_USER_D_TBL_ORGINATION" FromRole="TBL_USER_D" ToRole="TBL_ORGINATION" />
         </EntityType>
         <EntityType Name="View_Visit">
           <Key>
@@ -820,6 +1006,12 @@ warning 6002: The table/view 'techohas.dbo.View_Visit' does not have a primary k
             <End Role="TBL_CONSULTANT" EntitySet="TBL_CONSULTANT" />
             <End Role="TBL_R_RECEIPT" EntitySet="TBL_R_RECEIPT" />
           </AssociationSet>
+          <EntitySet Name="TBL_ORGINATION" EntityType="PathologyModel.TBL_ORGINATION" />
+          <EntitySet Name="TBL_PAY_MAST" EntityType="PathologyModel.TBL_PAY_MAST" />
+          <AssociationSet Name="FK_TBL_USER_D_TBL_ORGINATION" Association="PathologyModel.FK_TBL_USER_D_TBL_ORGINATION">
+            <End Role="TBL_ORGINATION" EntitySet="TBL_ORGINATION" />
+            <End Role="TBL_USER_D" EntitySet="TBL_USER_D" />
+          </AssociationSet>
         </EntityContainer>
         <Association Name="FK_TBL_R_RECEIPT_TBL_CONSULTANT">
           <End Type="PathologyModel.TBL_CONSULTANT" Role="TBL_CONSULTANT" Multiplicity="0..1" />
@@ -830,6 +1022,184 @@ warning 6002: The table/view 'techohas.dbo.View_Visit' does not have a primary k
             </Principal>
             <Dependent Role="TBL_R_RECEIPT">
               <PropertyRef Name="CONSULTANT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TBL_ORGINATION">
+          <Key>
+            <PropertyRef Name="ORG_ID" />
+          </Key>
+          <Property Name="ORG_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ORGNAME" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_AVBRIVATION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_ADDRESS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_PHONE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_LOCATION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_LOGO" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_VISSION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_EMAIL" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_A" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_B" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_C" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_CODE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_BARCH" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_HEAD" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TBL_USER_D" Relationship="PathologyModel.FK_TBL_USER_D_TBL_ORGINATION" FromRole="TBL_ORGINATION" ToRole="TBL_USER_D" />
+        </EntityType>
+        <EntityType Name="TBL_PAY_MAST">
+          <Key>
+            <PropertyRef Name="EMP_CODE" />
+          </Key>
+          <Property Name="EMP_CODE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EMP_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMP_FNAME" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMP_MNAME" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="SEX_MF" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EMP_CELL" Type="Int32" />
+          <Property Name="BIRTH_DATE" Type="DateTime" Precision="0" />
+          <Property Name="ID_CARD" Type="Int32" />
+          <Property Name="EMP_PHONE" Type="Int32" />
+          <Property Name="EMP_EMAIL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMP_POSADD" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="EMP_RELIGION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMP_SECT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMP_CAST" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ID_EXP" Type="DateTime" Precision="0" />
+          <Property Name="EMP_DESG" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMP_PIC" Type="Int32" />
+          <Property Name="DEP_CODE" Type="Int32" />
+          <Property Name="JOIN_DATE" Type="DateTime" Precision="0" />
+          <Property Name="GROSS_SAL" Type="Int32" />
+          <Property Name="INCOME_TAX" Type="Int32" />
+          <Property Name="EMP_TAXNO" Type="Int32" />
+          <Property Name="EMP_ACCNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="REC_DATE" Type="DateTime" Precision="0" />
+          <Property Name="TERMINAT" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="NET_SLRY" Type="Int32" />
+          <Property Name="INC_PAY" Type="Int32" />
+          <Property Name="CITY_CODE" Type="Int32" />
+          <Property Name="GROUP_CODE" Type="Int32" />
+          <Property Name="RSG_DATE" Type="DateTime" Precision="0" />
+          <Property Name="PAY_TYPE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="STATION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EOBI" Type="Int32" />
+          <Property Name="CMP_CODE" Type="Int32" />
+          <Property Name="ETP_CODE" Type="Int32" />
+          <Property Name="AUTOTAX" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="B_CODE" Type="Int32" />
+          <Property Name="APPYN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SALCODE" Type="Int32" />
+          <Property Name="SOCIALYN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EOBIYN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="USRID" Type="Int32" />
+          <Property Name="USTTY" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="SYS_DATE" Type="DateTime" Precision="0" />
+          <Property Name="D_CODE" Type="Int32" />
+          <Property Name="EMPADD" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+          <Property Name="MESSDED" Type="Int32" />
+          <Property Name="OVERGB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SHIFT_DATE" Type="DateTime" Precision="0" />
+          <Property Name="SHTIME_I" Type="DateTime" Precision="0" />
+          <Property Name="SHTIME_O" Type="DateTime" Precision="0" />
+          <Property Name="WEEK_OFF" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AUTOEXP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CONYN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SOCIALNO" Type="Int32" />
+          <Property Name="CON_DATE" Type="DateTime" Precision="0" />
+          <Property Name="BELONG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EOBINO" Type="Int32" />
+          <Property Name="FACTYN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ALI_DATE" Type="DateTime" Precision="0" />
+          <Property Name="EMP_REF" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CARDNO" Type="Int32" />
+          <Property Name="HEALTH" Type="Int32" />
+          <Property Name="FAX_NO" Type="Int32" />
+          <Property Name="EMNATI" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMDDIS" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMDPRO" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMPTEH" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMPDIS" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMPPRO" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PREADD" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="PRETEH" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PREDIS" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PREPRO" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="FACTD" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="POSDIS" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="POSPRO" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EMMARI" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RSGTYP" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BANK_ACC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="E1" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+          <Property Name="E2" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+          <Property Name="E3" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+          <Property Name="EX" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+          <Property Name="OLDCOD" Type="Int32" />
+          <Property Name="MACCOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TCODE" Type="Int32" />
+          <Property Name="NCODE" Type="Int32" />
+          <Property Name="PMDREG" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PMDEXP" Type="DateTime" Precision="0" />
+          <Property Name="FACREG" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="FACEXP" Type="DateTime" Precision="0" />
+          <Property Name="SHTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMPTIT" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="REBATE" Type="Int32" />
+          <Property Name="ATT_YN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PFNDYN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FCTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="INCHARGE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PNCREG" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PNCEXP" Type="DateTime" Precision="0" />
+          <Property Name="XADATE" Type="DateTime" Precision="0" />
+          <Property Name="XCDATE" Type="DateTime" Precision="0" />
+          <Property Name="XRDATE" Type="DateTime" Precision="0" />
+          <Property Name="PBTIME" Type="Time" Precision="7" />
+          <Property Name="PBINCR" Type="Int32" />
+          <Property Name="JOINSAL" Type="Int32" />
+          <Property Name="RSGDAYS" Type="Int32" />
+          <Property Name="CVCODE" Type="Int32" />
+          <Property Name="EMPARE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PKHORS" Type="Int32" />
+          <Property Name="SECURTY" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="E_DI" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="C_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="D_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RWAL_FOUN" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="S_CARD" Type="Int32" />
+          <Property Name="DOC" Type="Int32" />
+          <Property Name="APPL" Type="Int32" />
+          <Property Name="BIOT" Type="Int32" />
+          <Property Name="BANK" Type="Int32" />
+          <Property Name="FEE" Type="Int32" />
+          <Property Name="RSG_CODE" Type="Int32" />
+          <Property Name="DOCYN" Type="Int32" />
+          <Property Name="MED_ALLIED" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+          <Property Name="PRIVATE_PRACTICES" Type="Int32" />
+          <Property Name="SIGN" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="HOSTELYN" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="HOSTEL_CHARGES" Type="Int32" />
+          <Property Name="DAY_CAREYN" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="DAYCARE_CHARGES" Type="Int32" />
+          <Property Name="DRIVE_LINCES" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ENT_SYSDATE" Type="DateTime" Precision="0" />
+          <Property Name="EOBI_MON" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EOBI_YEAR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EOBI_R_DATE" Type="DateTime" Precision="0" />
+          <Property Name="DRYN" Type="Int32" />
+          <Property Name="SOCIAL_AMT" Type="Int32" />
+          <Property Name="EMP_TYPE" Type="Int32" />
+          <Property Name="EOBI_STATUS" Type="Int32" />
+        </EntityType>
+        <Association Name="FK_TBL_USER_D_TBL_ORGINATION">
+          <End Type="PathologyModel.TBL_ORGINATION" Role="TBL_ORGINATION" Multiplicity="0..1" />
+          <End Type="PathologyModel.TBL_USER_D" Role="TBL_USER_D" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBL_ORGINATION">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="TBL_USER_D">
+              <PropertyRef Name="ORG" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -1005,6 +1375,7 @@ warning 6002: The table/view 'techohas.dbo.View_Visit' does not have a primary k
           <EntitySetMapping Name="TBL_USER_D">
             <EntityTypeMapping TypeName="PathologyModel.TBL_USER_D">
               <MappingFragment StoreEntitySet="TBL_USER_D">
+                <ScalarProperty Name="ORG" ColumnName="ORG" />
                 <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
                 <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
                 <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
@@ -1110,6 +1481,173 @@ warning 6002: The table/view 'techohas.dbo.View_Visit' does not have a primary k
                 <ScalarProperty Name="PRY" ColumnName="PRY" />
                 <ScalarProperty Name="TEL_NO" ColumnName="TEL_NO" />
                 <ScalarProperty Name="CNIC_NO" ColumnName="CNIC_NO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_ORGINATION">
+            <EntityTypeMapping TypeName="PathologyModel.TBL_ORGINATION">
+              <MappingFragment StoreEntitySet="TBL_ORGINATION">
+                <ScalarProperty Name="ORG_HEAD" ColumnName="ORG_HEAD" />
+                <ScalarProperty Name="ORG_BARCH" ColumnName="ORG_BARCH" />
+                <ScalarProperty Name="ORG_CODE" ColumnName="ORG_CODE" />
+                <ScalarProperty Name="ORG_C" ColumnName="ORG_C" />
+                <ScalarProperty Name="ORG_B" ColumnName="ORG_B" />
+                <ScalarProperty Name="ORG_A" ColumnName="ORG_A" />
+                <ScalarProperty Name="ORG_EMAIL" ColumnName="ORG_EMAIL" />
+                <ScalarProperty Name="ORG_VISSION" ColumnName="ORG_VISSION" />
+                <ScalarProperty Name="ORG_LOGO" ColumnName="ORG_LOGO" />
+                <ScalarProperty Name="ORG_LOCATION" ColumnName="ORG_LOCATION" />
+                <ScalarProperty Name="ORG_PHONE" ColumnName="ORG_PHONE" />
+                <ScalarProperty Name="ORG_ADDRESS" ColumnName="ORG_ADDRESS" />
+                <ScalarProperty Name="ORG_AVBRIVATION" ColumnName="ORG_AVBRIVATION" />
+                <ScalarProperty Name="ORGNAME" ColumnName="ORGNAME" />
+                <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_PAY_MAST">
+            <EntityTypeMapping TypeName="PathologyModel.TBL_PAY_MAST">
+              <MappingFragment StoreEntitySet="TBL_PAY_MAST">
+                <ScalarProperty Name="EOBI_STATUS" ColumnName="EOBI_STATUS" />
+                <ScalarProperty Name="EMP_TYPE" ColumnName="EMP_TYPE" />
+                <ScalarProperty Name="SOCIAL_AMT" ColumnName="SOCIAL_AMT" />
+                <ScalarProperty Name="DRYN" ColumnName="DRYN" />
+                <ScalarProperty Name="EOBI_R_DATE" ColumnName="EOBI_R_DATE" />
+                <ScalarProperty Name="EOBI_YEAR" ColumnName="EOBI_YEAR" />
+                <ScalarProperty Name="EOBI_MON" ColumnName="EOBI_MON" />
+                <ScalarProperty Name="ENT_SYSDATE" ColumnName="ENT_SYSDATE" />
+                <ScalarProperty Name="DRIVE_LINCES" ColumnName="DRIVE_LINCES" />
+                <ScalarProperty Name="DAYCARE_CHARGES" ColumnName="DAYCARE_CHARGES" />
+                <ScalarProperty Name="DAY_CAREYN" ColumnName="DAY_CAREYN" />
+                <ScalarProperty Name="HOSTEL_CHARGES" ColumnName="HOSTEL_CHARGES" />
+                <ScalarProperty Name="HOSTELYN" ColumnName="HOSTELYN" />
+                <ScalarProperty Name="SIGN" ColumnName="SIGN" />
+                <ScalarProperty Name="PRIVATE_PRACTICES" ColumnName="PRIVATE_PRACTICES" />
+                <ScalarProperty Name="MED_ALLIED" ColumnName="MED_ALLIED" />
+                <ScalarProperty Name="DOCYN" ColumnName="DOCYN" />
+                <ScalarProperty Name="RSG_CODE" ColumnName="RSG_CODE" />
+                <ScalarProperty Name="FEE" ColumnName="FEE" />
+                <ScalarProperty Name="BANK" ColumnName="BANK" />
+                <ScalarProperty Name="BIOT" ColumnName="BIOT" />
+                <ScalarProperty Name="APPL" ColumnName="APPL" />
+                <ScalarProperty Name="DOC" ColumnName="DOC" />
+                <ScalarProperty Name="S_CARD" ColumnName="S_CARD" />
+                <ScalarProperty Name="RWAL_FOUN" ColumnName="RWAL_FOUN" />
+                <ScalarProperty Name="D_NAME" ColumnName="D_NAME" />
+                <ScalarProperty Name="C_NAME" ColumnName="C_NAME" />
+                <ScalarProperty Name="E_DI" ColumnName="E_DI" />
+                <ScalarProperty Name="SECURTY" ColumnName="SECURTY" />
+                <ScalarProperty Name="PKHORS" ColumnName="PKHORS" />
+                <ScalarProperty Name="EMPARE" ColumnName="EMPARE" />
+                <ScalarProperty Name="CVCODE" ColumnName="CVCODE" />
+                <ScalarProperty Name="RSGDAYS" ColumnName="RSGDAYS" />
+                <ScalarProperty Name="JOINSAL" ColumnName="JOINSAL" />
+                <ScalarProperty Name="PBINCR" ColumnName="PBINCR" />
+                <ScalarProperty Name="PBTIME" ColumnName="PBTIME" />
+                <ScalarProperty Name="XRDATE" ColumnName="XRDATE" />
+                <ScalarProperty Name="XCDATE" ColumnName="XCDATE" />
+                <ScalarProperty Name="XADATE" ColumnName="XADATE" />
+                <ScalarProperty Name="PNCEXP" ColumnName="PNCEXP" />
+                <ScalarProperty Name="PNCREG" ColumnName="PNCREG" />
+                <ScalarProperty Name="INCHARGE" ColumnName="INCHARGE" />
+                <ScalarProperty Name="FCTYPE" ColumnName="FCTYPE" />
+                <ScalarProperty Name="PFNDYN" ColumnName="PFNDYN" />
+                <ScalarProperty Name="ATT_YN" ColumnName="ATT_YN" />
+                <ScalarProperty Name="REBATE" ColumnName="REBATE" />
+                <ScalarProperty Name="EMPTIT" ColumnName="EMPTIT" />
+                <ScalarProperty Name="SHTYPE" ColumnName="SHTYPE" />
+                <ScalarProperty Name="FACEXP" ColumnName="FACEXP" />
+                <ScalarProperty Name="FACREG" ColumnName="FACREG" />
+                <ScalarProperty Name="PMDEXP" ColumnName="PMDEXP" />
+                <ScalarProperty Name="PMDREG" ColumnName="PMDREG" />
+                <ScalarProperty Name="NCODE" ColumnName="NCODE" />
+                <ScalarProperty Name="TCODE" ColumnName="TCODE" />
+                <ScalarProperty Name="MACCOD" ColumnName="MACCOD" />
+                <ScalarProperty Name="OLDCOD" ColumnName="OLDCOD" />
+                <ScalarProperty Name="EX" ColumnName="EX" />
+                <ScalarProperty Name="E3" ColumnName="E3" />
+                <ScalarProperty Name="E2" ColumnName="E2" />
+                <ScalarProperty Name="E1" ColumnName="E1" />
+                <ScalarProperty Name="BANK_ACC" ColumnName="BANK_ACC" />
+                <ScalarProperty Name="RSGTYP" ColumnName="RSGTYP" />
+                <ScalarProperty Name="EMMARI" ColumnName="EMMARI" />
+                <ScalarProperty Name="POSPRO" ColumnName="POSPRO" />
+                <ScalarProperty Name="POSDIS" ColumnName="POSDIS" />
+                <ScalarProperty Name="FACTD" ColumnName="FACTD" />
+                <ScalarProperty Name="PREPRO" ColumnName="PREPRO" />
+                <ScalarProperty Name="PREDIS" ColumnName="PREDIS" />
+                <ScalarProperty Name="PRETEH" ColumnName="PRETEH" />
+                <ScalarProperty Name="PREADD" ColumnName="PREADD" />
+                <ScalarProperty Name="EMPPRO" ColumnName="EMPPRO" />
+                <ScalarProperty Name="EMPDIS" ColumnName="EMPDIS" />
+                <ScalarProperty Name="EMPTEH" ColumnName="EMPTEH" />
+                <ScalarProperty Name="EMDPRO" ColumnName="EMDPRO" />
+                <ScalarProperty Name="EMDDIS" ColumnName="EMDDIS" />
+                <ScalarProperty Name="EMNATI" ColumnName="EMNATI" />
+                <ScalarProperty Name="FAX_NO" ColumnName="FAX_NO" />
+                <ScalarProperty Name="HEALTH" ColumnName="HEALTH" />
+                <ScalarProperty Name="CARDNO" ColumnName="CARDNO" />
+                <ScalarProperty Name="EMP_REF" ColumnName="EMP_REF" />
+                <ScalarProperty Name="ALI_DATE" ColumnName="ALI_DATE" />
+                <ScalarProperty Name="FACTYN" ColumnName="FACTYN" />
+                <ScalarProperty Name="EOBINO" ColumnName="EOBINO" />
+                <ScalarProperty Name="BELONG" ColumnName="BELONG" />
+                <ScalarProperty Name="CON_DATE" ColumnName="CON_DATE" />
+                <ScalarProperty Name="SOCIALNO" ColumnName="SOCIALNO" />
+                <ScalarProperty Name="CONYN" ColumnName="CONYN" />
+                <ScalarProperty Name="AUTOEXP" ColumnName="AUTOEXP" />
+                <ScalarProperty Name="WEEK_OFF" ColumnName="WEEK_OFF" />
+                <ScalarProperty Name="SHTIME_O" ColumnName="SHTIME_O" />
+                <ScalarProperty Name="SHTIME_I" ColumnName="SHTIME_I" />
+                <ScalarProperty Name="SHIFT_DATE" ColumnName="SHIFT_DATE" />
+                <ScalarProperty Name="OVERGB" ColumnName="OVERGB" />
+                <ScalarProperty Name="MESSDED" ColumnName="MESSDED" />
+                <ScalarProperty Name="EMPADD" ColumnName="EMPADD" />
+                <ScalarProperty Name="D_CODE" ColumnName="D_CODE" />
+                <ScalarProperty Name="SYS_DATE" ColumnName="SYS_DATE" />
+                <ScalarProperty Name="USTTY" ColumnName="USTTY" />
+                <ScalarProperty Name="USRID" ColumnName="USRID" />
+                <ScalarProperty Name="EOBIYN" ColumnName="EOBIYN" />
+                <ScalarProperty Name="SOCIALYN" ColumnName="SOCIALYN" />
+                <ScalarProperty Name="SALCODE" ColumnName="SALCODE" />
+                <ScalarProperty Name="APPYN" ColumnName="APPYN" />
+                <ScalarProperty Name="B_CODE" ColumnName="B_CODE" />
+                <ScalarProperty Name="AUTOTAX" ColumnName="AUTOTAX" />
+                <ScalarProperty Name="ETP_CODE" ColumnName="ETP_CODE" />
+                <ScalarProperty Name="CMP_CODE" ColumnName="CMP_CODE" />
+                <ScalarProperty Name="EOBI" ColumnName="EOBI" />
+                <ScalarProperty Name="STATION" ColumnName="STATION" />
+                <ScalarProperty Name="PAY_TYPE" ColumnName="PAY_TYPE" />
+                <ScalarProperty Name="RSG_DATE" ColumnName="RSG_DATE" />
+                <ScalarProperty Name="GROUP_CODE" ColumnName="GROUP_CODE" />
+                <ScalarProperty Name="CITY_CODE" ColumnName="CITY_CODE" />
+                <ScalarProperty Name="INC_PAY" ColumnName="INC_PAY" />
+                <ScalarProperty Name="NET_SLRY" ColumnName="NET_SLRY" />
+                <ScalarProperty Name="TERMINAT" ColumnName="TERMINAT" />
+                <ScalarProperty Name="REC_DATE" ColumnName="REC_DATE" />
+                <ScalarProperty Name="EMP_ACCNO" ColumnName="EMP_ACCNO" />
+                <ScalarProperty Name="EMP_TAXNO" ColumnName="EMP_TAXNO" />
+                <ScalarProperty Name="INCOME_TAX" ColumnName="INCOME_TAX" />
+                <ScalarProperty Name="GROSS_SAL" ColumnName="GROSS_SAL" />
+                <ScalarProperty Name="JOIN_DATE" ColumnName="JOIN_DATE" />
+                <ScalarProperty Name="DEP_CODE" ColumnName="DEP_CODE" />
+                <ScalarProperty Name="EMP_PIC" ColumnName="EMP_PIC" />
+                <ScalarProperty Name="EMP_DESG" ColumnName="EMP_DESG" />
+                <ScalarProperty Name="ID_EXP" ColumnName="ID_EXP" />
+                <ScalarProperty Name="EMP_CAST" ColumnName="EMP_CAST" />
+                <ScalarProperty Name="EMP_SECT" ColumnName="EMP_SECT" />
+                <ScalarProperty Name="EMP_RELIGION" ColumnName="EMP_RELIGION" />
+                <ScalarProperty Name="EMP_POSADD" ColumnName="EMP_POSADD" />
+                <ScalarProperty Name="EMP_EMAIL" ColumnName="EMP_EMAIL" />
+                <ScalarProperty Name="EMP_PHONE" ColumnName="EMP_PHONE" />
+                <ScalarProperty Name="ID_CARD" ColumnName="ID_CARD" />
+                <ScalarProperty Name="BIRTH_DATE" ColumnName="BIRTH_DATE" />
+                <ScalarProperty Name="EMP_CELL" ColumnName="EMP_CELL" />
+                <ScalarProperty Name="SEX_MF" ColumnName="SEX_MF" />
+                <ScalarProperty Name="EMP_MNAME" ColumnName="EMP_MNAME" />
+                <ScalarProperty Name="EMP_FNAME" ColumnName="EMP_FNAME" />
+                <ScalarProperty Name="EMP_NAME" ColumnName="EMP_NAME" />
+                <ScalarProperty Name="EMP_CODE" ColumnName="EMP_CODE" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

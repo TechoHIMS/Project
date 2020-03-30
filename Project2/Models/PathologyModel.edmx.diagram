@@ -19,6 +19,9 @@
         <AssociationConnector Association="PathologyModel.FK_TBL_R_RECEIPT_TBL_R_PATIENT" ManuallyRouted="false" />
         <AssociationConnector Association="PathologyModel.FK_TBL_R_TEST_TBL_USER_D" ManuallyRouted="false" />
         <AssociationConnector Association="PathologyModel.FK_TBL_R_RECEIPT_TBL_CONSULTANT" />
+        <EntityTypeShape EntityType="PathologyModel.TBL_ORGINATION" Width="1.5" PointX="6.875" PointY="0.75" />
+        <EntityTypeShape EntityType="PathologyModel.TBL_PAY_MAST" Width="1.5" PointX="0.75" PointY="12.5" />
+        <AssociationConnector Association="PathologyModel.FK_TBL_USER_D_TBL_ORGINATION" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -34,5 +34,7 @@ namespace Project2.Models
         public virtual DbSet<TBL_R_TEST> TBL_R_TEST { get; set; }
         public virtual DbSet<TBL_USER_D> TBL_USER_D { get; set; }
         public virtual DbSet<View_Visit> View_Visit { get; set; }
+        public virtual DbSet<TBL_ORGINATION> TBL_ORGINATION { get; set; }
+        public virtual DbSet<TBL_PAY_MAST> TBL_PAY_MAST { get; set; }
     }
 }
