@@ -12,7 +12,7 @@ namespace Project2.Controllers
 {
     public class HomeController : Controller
     {
-        PathologyEntities db = new PathologyEntities();
+        PathologyEntities1 db = new PathologyEntities1();
         // GET: Home
         public ActionResult Index()
         {
@@ -262,7 +262,7 @@ namespace Project2.Controllers
                 return View("index");
             }
             List<View_Visit> att = new List<View_Visit>();
-            using (PathologyEntities entities = new PathologyEntities())
+            using (PathologyEntities1 entities = new PathologyEntities1())
             {
                 att = entities.View_Visit.Where(a => a.R_ID == sub).ToList();
             }

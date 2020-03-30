@@ -1670,11 +1670,18 @@
       </ConnectionProperties>
       <rd:DataSourceID>b2cf9b42-b7f3-4596-a6c0-92e702006126</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="Pathology_dbDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>44007af7-912c-4e1c-b55f-339a774172ae</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>Pathology_dbDataSet2</DataSourceName>
+        <DataSourceName>Pathology_dbDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -2044,8 +2051,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>Pathology_dbDataSet2</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\User\source\repos\Project2\Project2\Pathology_dbDataSet2.xsd</rd:SchemaPath>
+        <rd:DataSetName>Pathology_dbDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\User\source\ProjectHIMS\Project2\Pathology_dbDataSet.xsd</rd:SchemaPath>
         <rd:TableName>View_Visit</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

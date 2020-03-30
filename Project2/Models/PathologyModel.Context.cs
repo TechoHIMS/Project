@@ -13,10 +13,10 @@ namespace Project2.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PathologyEntities : DbContext
+    public partial class PathologyEntities1 : DbContext
     {
-        public PathologyEntities()
-            : base("name=PathologyEntities")
+        public PathologyEntities1()
+            : base("name=PathologyEntities1")
         {
         }
     
@@ -27,6 +27,8 @@ namespace Project2.Models
     
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TBL_CONSULTANT> TBL_CONSULTANT { get; set; }
+        public virtual DbSet<TBL_ORGINATION> TBL_ORGINATION { get; set; }
+        public virtual DbSet<TBL_PAY_MAST> TBL_PAY_MAST { get; set; }
         public virtual DbSet<TBL_R_CAT> TBL_R_CAT { get; set; }
         public virtual DbSet<TBL_R_DEPT> TBL_R_DEPT { get; set; }
         public virtual DbSet<TBL_R_PATIENT> TBL_R_PATIENT { get; set; }
@@ -34,7 +36,5 @@ namespace Project2.Models
         public virtual DbSet<TBL_R_TEST> TBL_R_TEST { get; set; }
         public virtual DbSet<TBL_USER_D> TBL_USER_D { get; set; }
         public virtual DbSet<View_Visit> View_Visit { get; set; }
-        public virtual DbSet<TBL_ORGINATION> TBL_ORGINATION { get; set; }
-        public virtual DbSet<TBL_PAY_MAST> TBL_PAY_MAST { get; set; }
     }
 }

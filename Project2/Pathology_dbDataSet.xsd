@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="Pathology_dbDataSet2" targetNamespace="http://tempuri.org/Pathology_dbDataSet2.xsd" xmlns:mstns="http://tempuri.org/Pathology_dbDataSet2.xsd" xmlns="http://tempuri.org/Pathology_dbDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="Pathology_dbDataSet" targetNamespace="http://tempuri.org/Pathology_dbDataSet.xsd" xmlns:mstns="http://tempuri.org/Pathology_dbDataSet.xsd" xmlns="http://tempuri.org/Pathology_dbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -118,7 +118,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="Pathology_dbDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Pathology_dbDataSet2" msprop:Generator_UserDSName="Pathology_dbDataSet2">
+  <xs:element name="Pathology_dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Pathology_dbDataSet" msprop:Generator_UserDSName="Pathology_dbDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="View_Visit" msprop:Generator_TableClassName="View_VisitDataTable" msprop:Generator_TableVarName="tableView_Visit" msprop:Generator_TablePropName="View_Visit" msprop:Generator_RowDeletingName="View_VisitRowDeleting" msprop:Generator_RowChangingName="View_VisitRowChanging" msprop:Generator_RowEvHandlerName="View_VisitRowChangeEventHandler" msprop:Generator_RowDeletedName="View_VisitRowDeleted" msprop:Generator_UserTableName="View_Visit" msprop:Generator_RowChangedName="View_VisitRowChanged" msprop:Generator_RowEvArgName="View_VisitRowChangeEvent" msprop:Generator_RowClassName="View_VisitRow">

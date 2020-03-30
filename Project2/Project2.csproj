@@ -147,9 +147,6 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Pathology_dbDataSet2.xsc">
-      <DependentUpon>Pathology_dbDataSet2.xsd</DependentUpon>
-    </Content>
     <EntityDeploy Include="Models\PathologyModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>PathologyModel.Designer.cs</LastGenOutput>
@@ -157,13 +154,16 @@
     <Content Include="Models\PathologyModel.edmx.diagram">
       <DependentUpon>PathologyModel.edmx</DependentUpon>
     </Content>
-    <None Include="Pathology_dbDataSet2.xsd">
+    <Content Include="Pathology_dbDataSet.xsc">
+      <DependentUpon>Pathology_dbDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Pathology_dbDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Pathology_dbDataSet2.Designer.cs</LastGenOutput>
+      <LastGenOutput>Pathology_dbDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Pathology_dbDataSet2.xss">
-      <DependentUpon>Pathology_dbDataSet2.xsd</DependentUpon>
+    <Content Include="Pathology_dbDataSet.xss">
+      <DependentUpon>Pathology_dbDataSet.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -241,10 +241,10 @@
     <Compile Include="Models\View_Visit.cs">
       <DependentUpon>PathologyModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Pathology_dbDataSet2.Designer.cs">
+    <Compile Include="Pathology_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Pathology_dbDataSet2.xsd</DependentUpon>
+      <DependentUpon>Pathology_dbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />

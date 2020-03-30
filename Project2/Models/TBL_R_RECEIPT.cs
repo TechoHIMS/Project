@@ -42,8 +42,8 @@ namespace Project2.Models
         public Nullable<int> APP_TOKEN { get; set; }
         public Nullable<System.DateTime> APP_TIME { get; set; }
     
+        public virtual TBL_CONSULTANT TBL_CONSULTANT { get; set; }
         public virtual TBL_R_DEPT TBL_R_DEPT { get; set; }
         public virtual TBL_R_PATIENT TBL_R_PATIENT { get; set; }
-        public virtual TBL_CONSULTANT TBL_CONSULTANT { get; set; }
     }
 }
