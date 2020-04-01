@@ -57,8 +57,8 @@ namespace Project2.Controllers
 
         public ActionResult Logout()
         {
-            FormsAuthentication.SignOut();
-            return RedirectToAction("Login", "Home");
+            //FormsAuthentication.SignOut();
+            return RedirectToAction("Login", "Account");
         }
 
     }

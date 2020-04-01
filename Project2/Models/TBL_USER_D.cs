@@ -11,7 +11,8 @@ namespace Project2.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TBL_USER_D
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,6 +23,7 @@ namespace Project2.Models
     
         public int USER_ID { get; set; }
         public string USER_NAME { get; set; }
+        [DataType(DataType.Password)]
         public string USER_PASSWORD { get; set; }
         public Nullable<int> DEP_CODE { get; set; }
         public Nullable<int> CMP_CODE { get; set; }

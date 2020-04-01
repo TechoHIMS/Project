@@ -54,7 +54,7 @@
                             <li class=""><a href="#">Change Password</a></li>
                             <li class=""><a href="#">View Details</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Logout</a></li>
+                            <li>@Html.ActionLink("Account", "logout", "Logout") </li>
                         </ul>
                     </li>
                 </ul>
@@ -111,7 +111,8 @@
                                     </div>
                                 </li>*@
 
-                                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> LOGOUT</a></li>
+                                <li><a href="~/Account/Login"><span class="glyphicon glyphicon-log-out"></span> LOGOUT</a></li>
+                               
 
                             </ul>
                         </div><!-- /.navbar-collapse -->
