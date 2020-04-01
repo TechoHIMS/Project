@@ -124,6 +124,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="CSS\AdminCSS.css" />
     <Content Include="CSS\Custon-Cs.css" />
+    <Content Include="CSS\Login.css" />
     <Content Include="CSS\UserLoginCSS.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
